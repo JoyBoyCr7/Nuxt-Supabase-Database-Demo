@@ -81,14 +81,14 @@ onMounted(() => {
   <div class="form-container">
     <form @submit.prevent="handleSubmit">
         <label for="fname">First name:</label>
-        <input v-model="form.first_name" type="text" id="fname"  name="fname" required><br><br>
+        <input v-model="form.first_name" type="text" id="fname"  name="fname" pattern="[A-Za-z\s]+" title="Only letters allowed" required><br><br>
         <label for="lname">Last name:</label>
-        <input v-model="form.last_name" type="text" id="lname" name="lname" required><br><br>
+        <input v-model="form.last_name" type="text" id="lname" name="lname" pattern="[A-Za-z\s]+" title="Only letters allowed" required><br><br>
 
         <label for="dob">Date of birth:</label>
         <input v-model="form.date_of_birth" type="date" id="dob" name="dob" required><br><br>
 
-        <label for="reason_for_visit"> What brings you in today?</label>
+        <label for="reason_for_visit" pattern="[A-Za-z\s]+" title="Only letters allowed"> What brings you in today?</label>
         <input v-model="form.reason_for_visit" type="text" id="reason_for_visit" name="reason_for_visit"><br><br>
 
         <input id="submit" type="submit">
