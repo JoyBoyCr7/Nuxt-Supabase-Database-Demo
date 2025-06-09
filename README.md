@@ -1,28 +1,30 @@
-# Instructions
+# NUXT-SUPABASE-DATABASE-DEMO 
 
-Most of your work can be done in the app.vue file.
-For interacting with APIs, you can use [composables](https://vuejs.org/guide/reusability/composables) or leave it in app.vue.
+A simple patient check-in application built with Vue 3 (Composition API + TypeScript) and Supabase as the backend database.
 
-# Nuxt Minimal Starter
+##  Features
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+- Patient check-in form with:
+  - First name
+  - Last name
+  - Date of birth
+  - Reason for visit
+- Stores submissions in Supabase
+- Displays a list of all checked-in patients
+- Option to delete a submission
+- Success/error message handling
 
-## Setup
+## Tech Stack
 
-Make sure to install dependencies:
+- Vue 3
+- TypeScript
+- Supabase
 
-```bash
-# npm
-npm install
+## Deployed site
 
-```
+[Check it out here](https://nuxt-supabase-database-demo.vercel.app/)
 
-## Development Server
+### 1. Clone the repository
 
-Start the development server on `http://localhost:3000`:
+git clone https://github.com/JoyBoyCr7/Nuxt-Supabase-Database-Demo
 
-```bash
-# npm
-npm run dev
-
-```
