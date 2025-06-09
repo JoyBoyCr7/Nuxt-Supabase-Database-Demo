@@ -27,7 +27,10 @@ const submissions = ref<Submission[]>([])
 // Fetch all form submissions from the Supabase 'Form' table
 async function getSubmissions() {
   const { data } = await supabase.from('Form').select()
-  submissions.value = data
+  if (data) {
+  submissions.value = data as Submission[]
+ }
+
   // Testing
   console.log('Fetched submissions', submissions.value)
 }
