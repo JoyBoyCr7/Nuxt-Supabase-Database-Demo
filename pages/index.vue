@@ -76,7 +76,7 @@ onMounted(() => {
 
 <template>
     <div >
-    <h2 class="form-title">Clear Lakes Dental Checkin Form</h2>
+    <h2 class="form-title">Clear Lakes Dental Check-in Form</h2>
     </div>
   <div class="form-container">
     <form @submit.prevent="handleSubmit">
@@ -95,7 +95,7 @@ onMounted(() => {
     </form>
         <div v-if="status === 'success'" class="success">Checked in successfully!</div>
         <div v-if="status === 'delete success'" class="success">Patient deleted!</div>
-        <div v-if="status === 'error'" class="error">checkin failed. Try again.</div>
+        <div v-if="status === 'error'" class="error">check-in failed. Try again.</div>
     <div>
         <h2> Checked in</h2>
         <ul>
